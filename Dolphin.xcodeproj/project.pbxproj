@@ -13,11 +13,12 @@
 		159E4DB118580C3D006B9E31 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 159E4DAF18580C3D006B9E31 /* Credits.rtf */; };
 		159E4DB418580C3D006B9E31 /* DPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 159E4DB318580C3D006B9E31 /* DPAppDelegate.m */; };
 		159E4DB718580C3D006B9E31 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 159E4DB518580C3D006B9E31 /* MainMenu.xib */; };
-		159E4DB918580C3D006B9E31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159E4DB818580C3D006B9E31 /* Images.xcassets */; };
 		159E4DC018580C3D006B9E31 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159E4DBF18580C3D006B9E31 /* XCTest.framework */; };
 		159E4DC118580C3D006B9E31 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159E4DA018580C3D006B9E31 /* Cocoa.framework */; };
 		159E4DC918580C3D006B9E31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 159E4DC718580C3D006B9E31 /* InfoPlist.strings */; };
 		159E4DCB18580C3D006B9E31 /* DolphinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 159E4DCA18580C3D006B9E31 /* DolphinTests.m */; };
+		159E4DD618580CB6006B9E31 /* DPMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 159E4DD518580CB6006B9E31 /* DPMainController.m */; };
+		159E4DD8185816F8006B9E31 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 159E4DD7185816F8006B9E31 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +45,14 @@
 		159E4DB218580C3D006B9E31 /* DPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPAppDelegate.h; sourceTree = "<group>"; };
 		159E4DB318580C3D006B9E31 /* DPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAppDelegate.m; sourceTree = "<group>"; };
 		159E4DB618580C3D006B9E31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		159E4DB818580C3D006B9E31 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		159E4DBE18580C3D006B9E31 /* DolphinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DolphinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		159E4DBF18580C3D006B9E31 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		159E4DC618580C3D006B9E31 /* DolphinTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DolphinTests-Info.plist"; sourceTree = "<group>"; };
 		159E4DC818580C3D006B9E31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		159E4DCA18580C3D006B9E31 /* DolphinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DolphinTests.m; sourceTree = "<group>"; };
+		159E4DD418580CB6006B9E31 /* DPMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPMainController.h; sourceTree = "<group>"; };
+		159E4DD518580CB6006B9E31 /* DPMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPMainController.m; sourceTree = "<group>"; };
+		159E4DD7185816F8006B9E31 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +118,12 @@
 		159E4DA618580C3D006B9E31 /* Dolphin */ = {
 			isa = PBXGroup;
 			children = (
+				159E4DD7185816F8006B9E31 /* Images.xcassets */,
 				159E4DB218580C3D006B9E31 /* DPAppDelegate.h */,
 				159E4DB318580C3D006B9E31 /* DPAppDelegate.m */,
+				159E4DD418580CB6006B9E31 /* DPMainController.h */,
+				159E4DD518580CB6006B9E31 /* DPMainController.m */,
 				159E4DB518580C3D006B9E31 /* MainMenu.xib */,
-				159E4DB818580C3D006B9E31 /* Images.xcassets */,
 				159E4DA718580C3D006B9E31 /* Supporting Files */,
 			);
 			path = Dolphin;
@@ -232,7 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				159E4DAB18580C3D006B9E31 /* InfoPlist.strings in Resources */,
-				159E4DB918580C3D006B9E31 /* Images.xcassets in Resources */,
+				159E4DD8185816F8006B9E31 /* Images.xcassets in Resources */,
 				159E4DB118580C3D006B9E31 /* Credits.rtf in Resources */,
 				159E4DB718580C3D006B9E31 /* MainMenu.xib in Resources */,
 			);
@@ -255,6 +260,7 @@
 			files = (
 				159E4DB418580C3D006B9E31 /* DPAppDelegate.m in Sources */,
 				159E4DAD18580C3D006B9E31 /* main.m in Sources */,
+				159E4DD618580CB6006B9E31 /* DPMainController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
